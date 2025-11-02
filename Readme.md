@@ -1,6 +1,6 @@
 
 # Projeto de Automação de Testes de API com Cypress
-Este projeto foca na automação completa de testes de API utilizando a biblioteca Cypress e a API pública de simulação de dispositivos (devices) disponível em https://restful-api.dev/.
+Este projeto foca na automação completa de testes de API utilizando Cypress e a API pública de simulação de dispositivos (devices) disponível em https://restful-api.dev/.
 
 🎯 Objetivo
 Garantir a qualidade e a estabilidade da API através de testes automatizados que cobrem os principais cenários de integração, incluindo os métodos HTTP fundamentais para manipulação de recursos:
