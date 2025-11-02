@@ -17,7 +17,7 @@ Inicialmente, todos os testes foram feitos **manualmente no Postman**. Em seguid
 
 Validando:
 
-* Status HTTP Codes
+* Status HTTP Codegit
 * Estrutura e conteúdo dos payloads (JSON body)
 * Encadeamento de requisições (ex: Cadastrar e depois Deletar)
 * Cenários de sucesso e falha (ex: dispositivo não encontrado).
