@@ -1,0 +1,13 @@
+name: Cypress APi Testing Pipeline
+on:
+  pull request:
+    branches:
+      - main
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: CLonar o projeto
+        uses: actions/checkout@v4
+      - name: Cypress run
+        uses: cypress-io/github-action@v6

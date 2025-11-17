@@ -26,7 +26,7 @@ describe("Deletar Dispositivo", () => {
             `Object with id = ${id} has been deleted.`
           );
 
-           cy.log(`Dispositivo com ${id} deletado com sucesso `);  // para ver o que está vindo no response.body
+           cy.log(`Dispositivo com ${id} deletado com sucesso `); 
         });
     });
  
@@ -34,7 +34,7 @@ describe("Deletar Dispositivo", () => {
   it("Deletar dispositivo inexistente", () => {
     const id_inexistente = "xpto"; //id que não existe
 
-    cy.deletarDispositivo(id_inexistente) //este encadeado
+    cy.deletarDispositivo(id_inexistente) 
       .then((response_delete) => {
         //posso trocar o nome response_delete por qualquer outro nome
         expect(response_delete.status).to.equal(404);

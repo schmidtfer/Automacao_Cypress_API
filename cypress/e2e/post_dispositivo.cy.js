@@ -7,7 +7,7 @@ describe("Cadastrar Dispositivos", () => {
       expect(response.status).to.equal(200);
       expect(response.body.id).to.be.not.empty;
       expect(response.body.createdAt).to.be.not.empty;
-      expect(response.body.name).to.equal(dados.name); // a partir do momento que eu faço essa const, aqui posso colocar:  expect(response.body.price).to.be.equal(dados.price)                                                        // to.equal(dados.name) ou deixar ('Bisteca Pro 16')
+      expect(response.body.name).to.equal(dados.name);
 
       //validar o que está dentro de objeto data
       expect(response.body.data.year).to.equal(dados.data.year);

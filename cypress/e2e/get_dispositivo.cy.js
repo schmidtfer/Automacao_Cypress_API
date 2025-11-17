@@ -2,7 +2,7 @@
 
 describe("Buscar Dispositivo", () => {
   it("Buscar dispositivo especifico", () => {
-    const id = "7"; //entre "string"
+    const id = "7"; 
 
     cy.buscarDispositivoEspecifico(id).then((response) => {
       expect(response.status).to.equal(200);
@@ -38,12 +38,12 @@ describe("Buscar Dispositivo", () => {
 
   it("Bucar todos dispositivos", () => {
     cy.buscarTodosDispositivos("").then((response) => {
-      expect(response.status).to.equal(200); //sem parametros, deixo () vazio
+      expect(response.status).to.equal(200);
       response.body.forEach((element) => {
         expect(element.id).not.be.empty;
         expect(element.name).not.be.empty;
 
-        cy.log("Meus dispositivos são: ", element.name); //procuro o body no devtolls- log (registros)--- Yielded (entregue)
+        cy.log("Meus dispositivos são: ", element.name); 
       });
     });
   });

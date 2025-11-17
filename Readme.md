@@ -42,3 +42,4 @@ failOnStatusCode: false   //pois se ficar true, no erro o teste quebra/para
 # Support e2e
   importa os commands
 
+# Criação Pipeline no GitHub Actions
